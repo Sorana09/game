@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  
+    <meta name="description" content="Random Quote Generator" />
+    <meta name="keywords" content="HTML,CSS,JavaScript, Quotes, API" />
+    <meta name="author" content="Neha Soni" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="inf.js"/>
+
+<!--LINK CUSTOM CSS FILE-->
+<link rel="stylesheet" href="card.css" />
+
+<!--FONTAWESOME CDN-->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous"
+/>
+
+  </head>
+  <body>
+    <div class="hero">
+        <body>
+          <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            <ul class="main-nav" id="js-menu">
+              <li>
+                <a href="tetris.html" class="nav-links">Tetris</a>
+              </li>
+              <li>
+                <a href="quiz.html" class="nav-links">Quiz</a>
+              </li>
+              <li>
+                <a href="snack.html" class="nav-links">X&O</a>
+              </li>
+          
+              <li>
+                <a href="login.html" class="nav-links">Login</a>
+              </li>
+            </ul>
+  
+  
+      </div>
+  <!-- <div class="card">
+    <img scr="unnamed-2.jpg" alt="" class="card-image">
+    <h3 class="card-title">The Beach</h3>
+  </div> -->
+  
+  
+     <!-- Quote Container -->
+     <div class="container">
+      <!-- Quote to be Displayed Here -->
+      <h1>
+        <i class="fas fa-quote-left"></i>
+        <span class="quote" id="quote"></span>
+        <i class="fas fa-quote-right"></i>
+      </h1>
+      <!-- Author to be Displayed Here -->
+      <p class="author" id="author"></p>
+  
+      <hr />
+      <div class="buttons">
+        <!--Button to tweet the quote -->
+        <a
+          class="twitter"
+          id="tweet"
+          href="https://twitter.com/intent/tweet?text=Greetings"
+          data-size="large"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!--Add an onclick event on 'next quote' button. Upon the click of a button, a new random quote is generated-->
+        <button class="next" onclick="getNewQuote()">Next quote</button>
+      </div>
+    </div>
+  
+    <!--LINK CUSTOM JS FILE-->
+    <script src="sta.js"></script>
+  </body>
+</html>
